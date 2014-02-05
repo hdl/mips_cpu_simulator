@@ -37,6 +37,12 @@ Simulated MIPS processor running states: instruction fetch, decode, execute, pc 
 ###boot loadder:
 make bootldr
 
+Assembly code initializes stack pointer, sets interrupt service routine and jumps to main().
+
+Initializes hardware, prepares RAM space for kernel or ELF programs.
+
+Provides basic boot loader functions: memory read, write, dump and binary file receiving (serial port).
+
 
 ###More information please check http://opencores.org/project,plasma
 
