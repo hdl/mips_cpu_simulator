@@ -25,7 +25,18 @@ make bootldr: Boot Loader for elf file and kernel
 
 make hello: hello world...
 
-no_os.c: Interrupt Service Routine inside.
+boot.asm: Interrupt Service Routine inside.
+
+###mlite:
+make mlite
+
+Provided basic debug functions for MIPS ASM programs: next, step, breakpoint, run, memory/register watch, pc jump.
+
+Simulated MIPS processor running states: instruction fetch, decode, execute, pc update, exception handler.
+
+###boot loadder:
+make bootldr
+
 
 ###More information please check http://opencores.org/project,plasma
 
